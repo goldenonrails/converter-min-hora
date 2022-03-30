@@ -5,14 +5,12 @@
 int main(){
 
     int horas = 0;
-    int mnts = 120;
+    int mnts = 295;
 
-    if(mnts > 59){
-        horas = horas + 1;
+    while(mnts > 10){
         mnts = mnts - 59;
+        horas++;
+        printf("Agora sao %dh e %imin\n", horas, mnts);
     }
-
-    printf("Agora sao %dh e %imin\n", horas, mnts);
-    
     return 0;
 }
